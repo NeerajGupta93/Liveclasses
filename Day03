@@ -12,3 +12,4 @@ or sudo gpasswd -M jetha,babitaji tester (For multiuser, -M will overwrite the g
 from home
 cd .ssh to check key list (this is the public key and saved in the server, private key will be in local machine)
 ssh -i "private key" server
+ssh-keygen(to generate public and private kye, id_rsa.pub and id_rsa----> id_rsa.pub must be saved in authorized key file)
