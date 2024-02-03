@@ -1,0 +1,14 @@
+sudo useradd -m days (smae for tappu,to add as a user) 
+sudo passwd daya (to set passwrod)
+///in home dir////
+sudo groupadd devops
+\\\\\\ "/etc/group" \\\\\\
+sudo groupadd tester
+sudo usermod -aG devops tappu (modify the user, append in the grp)
+or sudo gpasswd -M jetha,babitaji tester (For multiuser, -M will overwrite the group-previous member will be removed)
+/// We provide perission to secondary groups. Bydefault a primary group is created with the user name.
+
+
+from home
+cd .ssh to check key list (this is the public key and saved in the server, private key will be in local machine)
+ssh -i "private key" server
